@@ -1,0 +1,37 @@
+/* =========================================================
+   CUSTOM STYLES
+   (Aturan tambahan di luar utility class Tailwind)
+========================================================= */
+
+html {
+  font-family: 'Inter', sans-serif;
+}
+
+/* Menghormati preferensi reduced motion pengguna (aksesibilitas) */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Fokus keyboard yang jelas untuk aksesibilitas */
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid #2563eb;
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* Animasi fade-in halus untuk section saat discroll (dikontrol via JS) */
+.reveal {
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.reveal.in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
