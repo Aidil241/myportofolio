@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Portofolio Personal — Single Page
 
 Website portofolio satu halaman untuk mahasiswa Informatika / Software Engineering.
@@ -66,3 +67,6 @@ Beberapa ide jika ingin mengembangkan lebih jauh:
 ## 📄 Lisensi
 
 Bebas digunakan dan dimodifikasi untuk keperluan personal/portofolio.
+=======
+# myportofolio
+>>>>>>> 3c15beff77ae934534ce7885428d12cecce9f286
