@@ -191,57 +191,68 @@
          SKILLS SECTION
     ========================================================== -->
     <section id="skills" class="py-20 reveal">
-      <div class="max-w-6xl mx-auto px-6 lg:px-8">
-        <h2 class="text-3xl font-extrabold text-ink text-center">Keahlian</h2>
-        <p class="mt-3 text-muted text-center max-w-2xl mx-auto">
-          Teknologi dan tools yang saya gunakan untuk membangun sebuah produk digital.
-        </p>
+  <!-- PERUBAHAN: px-6 diubah menjadi px-8, ditambahkan md:px-12 dan lg:px-16 agar jarak kiri-kanan lebih lega -->
+  <div class="max-w-6xl mx-auto px-8 md:px-12 lg:px-16">
+    <h2 class="text-3xl font-extrabold text-ink text-center">Keahlian</h2>
+    <p class="mt-3 text-muted text-center max-w-2xl mx-auto">
+      Teknologi dan tools yang saya gunakan untuk membangun sebuah produk digital.
+    </p>
 
-        <div class="mt-10 grid md:grid-cols-3 gap-6">
+    <!-- Grid Layout -->
+    <div class="mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
 
-          <!-- Kategori: Frontend -->
-          <div class="bg-card border border-border rounded-2xl shadow-sm p-6">
-            <h3 class="font-bold text-ink mb-4 flex items-center gap-2">
-              <span class="w-2 h-2 rounded-full bg-accent"></span> Frontend
-            </h3>
-            <div class="flex flex-wrap gap-2">
-              <span class="text-sm font-medium text-ink bg-base border border-border rounded-lg px-3 py-1.5">HTML</span>
-              <span class="text-sm font-medium text-ink bg-base border border-border rounded-lg px-3 py-1.5">CSS</span>
-              <span class="text-sm font-medium text-ink bg-base border border-border rounded-lg px-3 py-1.5">JavaScript</span>
-              <span class="text-sm font-medium text-ink bg-base border border-border rounded-lg px-3 py-1.5">React</span>
-              <span class="text-sm font-medium text-ink bg-base border border-border rounded-lg px-3 py-1.5">Tailwind CSS</span>
-            </div>
-          </div>
-
-          <!-- Kategori: Backend & Database -->
-          <div class="bg-card border border-border rounded-2xl shadow-sm p-6">
-            <h3 class="font-bold text-ink mb-4 flex items-center gap-2">
-              <span class="w-2 h-2 rounded-full bg-accent"></span> Backend & Database
-            </h3>
-            <div class="flex flex-wrap gap-2">
-              <span class="text-sm font-medium text-ink bg-base border border-border rounded-lg px-3 py-1.5">Node.js</span>
-              <span class="text-sm font-medium text-ink bg-base border border-border rounded-lg px-3 py-1.5">Python</span>
-              <span class="text-sm font-medium text-ink bg-base border border-border rounded-lg px-3 py-1.5">PostgreSQL</span>
-              <span class="text-sm font-medium text-ink bg-base border border-border rounded-lg px-3 py-1.5">MySQL</span>
-            </div>
-          </div>
-
-          <!-- Kategori: Tools & Others -->
-          <div class="bg-card border border-border rounded-2xl shadow-sm p-6">
-            <h3 class="font-bold text-ink mb-4 flex items-center gap-2">
-              <span class="w-2 h-2 rounded-full bg-accent"></span> Tools & Others
-            </h3>
-            <div class="flex flex-wrap gap-2">
-              <span class="text-sm font-medium text-ink bg-base border border-border rounded-lg px-3 py-1.5">Git</span>
-              <span class="text-sm font-medium text-ink bg-base border border-border rounded-lg px-3 py-1.5">GitHub</span>
-              <span class="text-sm font-medium text-ink bg-base border border-border rounded-lg px-3 py-1.5">Figma</span>
-              <span class="text-sm font-medium text-ink bg-base border border-border rounded-lg px-3 py-1.5">VS Code</span>
-            </div>
-          </div>
-
+      <!-- Kategori: Frontend -->
+      <div class="bg-card border border-border rounded-2xl shadow-sm p-8 h-full flex flex-col">
+        <h3 class="font-bold text-ink mb-5 flex items-center gap-2">
+          <span class="w-2 h-2 rounded-full bg-accent"></span> Frontend
+        </h3>
+        <div class="flex flex-wrap gap-3">
+          <span class="text-sm font-medium text-ink bg-base border border-border rounded-lg px-3 py-1.5">HTML</span>
+          <span class="text-sm font-medium text-ink bg-base border border-border rounded-lg px-3 py-1.5">CSS</span>
+          <span class="text-sm font-medium text-ink bg-base border border-border rounded-lg px-3 py-1.5">JavaScript</span>
+          <span class="text-sm font-medium text-ink bg-base border border-border rounded-lg px-3 py-1.5">Bootstrap 5</span>
+          <span class="text-sm font-medium text-ink bg-base border border-border rounded-lg px-3 py-1.5">Tailwind CSS</span>
         </div>
       </div>
-    </section>
+
+      <!-- Kategori: Backend & Database -->
+      <div class="bg-card border border-border rounded-2xl shadow-sm p-8 h-full flex flex-col">
+        <h3 class="font-bold text-ink mb-5 flex items-center gap-2">
+          <span class="w-2 h-2 rounded-full bg-accent"></span> Backend & Database
+        </h3>
+        <div class="flex flex-wrap gap-3">
+          <span class="text-sm font-medium text-ink bg-base border border-border rounded-lg px-3 py-1.5">PHP</span>
+          <span class="text-sm font-medium text-ink bg-base border border-border rounded-lg px-3 py-1.5">MySQL</span>
+        </div>
+      </div>
+
+      <!-- Kategori: Pengembangan Game -->
+      <div class="bg-card border border-border rounded-2xl shadow-sm p-8 h-full flex flex-col">
+        <h3 class="font-bold text-ink mb-5 flex items-center gap-2">
+          <span class="w-2 h-2 rounded-full bg-accent"></span> Pengembangan Game
+        </h3>
+        <div class="flex flex-wrap gap-3">
+          <span class="text-sm font-medium text-ink bg-base border border-border rounded-lg px-3 py-1.5">C++</span>
+        </div>
+      </div>
+
+      <!-- Kategori: Tools & Others -->
+      <div class="bg-card border border-border rounded-2xl shadow-sm p-8 h-full flex flex-col">
+        <h3 class="font-bold text-ink mb-5 flex items-center gap-2">
+          <span class="w-2 h-2 rounded-full bg-accent"></span> Tools & Others
+        </h3>
+        <div class="flex flex-wrap gap-3">
+          <span class="text-sm font-medium text-ink bg-base border border-border rounded-lg px-3 py-1.5">Git</span>
+          <span class="text-sm font-medium text-ink bg-base border border-border rounded-lg px-3 py-1.5">GitHub</span>
+          <span class="text-sm font-medium text-ink bg-base border border-border rounded-lg px-3 py-1.5">Figma</span>
+          <span class="text-sm font-medium text-ink bg-base border border-border rounded-lg px-3 py-1.5">VS Code</span>
+          <span class="text-sm font-medium text-ink bg-base border border-border rounded-lg px-3 py-1.5">Android Studio</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
 
     <!-- =========================================================
          PROJECTS SECTION
@@ -257,38 +268,35 @@
 
           <!-- Kartu Proyek 1 -->
           <article class="bg-card border border-border rounded-2xl shadow-sm overflow-hidden flex flex-col hover:shadow-md transition-shadow">
-            <img src="https://placehold.co/600x360/E2E8F0/0F172A?text=TaskFlow+App" alt="Mockup aplikasi TaskFlow" class="w-full h-44 object-cover">
+            <img src="/Asset/Mockuuups.jpeg" alt="Mockup aplikasi TaskFlow" class="w-full h-44 object-cover">
             <div class="p-6 flex flex-col flex-1">
-              <h3 class="font-bold text-ink">TaskFlow — Manajemen Tugas</h3>
-              <p class="mt-2 text-sm text-muted leading-relaxed flex-1">
-                Aplikasi manajemen tugas kolaboratif yang membantu tim mengatur prioritas pekerjaan
-                dan memantau progres secara real-time.
-              </p>
+              <h3 class="font-bold text-ink">CampusMate</h3>
+              <p class="mt-2 text-sm text-muted leading-relaxed flex-1">Aplikasi Mobile yang membantu pelajar atau mahasiswa mengelola jadwal, tugas, catatan, dan arsip akademik.</p>
               <div class="mt-4 flex flex-wrap gap-2">
-                <span class="text-xs font-semibold text-accent bg-accent/10 px-2.5 py-1 rounded-full">React</span>
-                <span class="text-xs font-semibold text-accent bg-accent/10 px-2.5 py-1 rounded-full">Tailwind</span>
-                <span class="text-xs font-semibold text-accent bg-accent/10 px-2.5 py-1 rounded-full">API</span>
+                <span class="text-xs font-semibold text-accent bg-accent/10 px-2.5 py-1 rounded-full">JavaScript</span>
+                <span class="text-xs font-semibold text-accent bg-accent/10 px-2.5 py-1 rounded-full">Capasitor</span>
+                <span class="text-xs font-semibold text-accent bg-accent/10 px-2.5 py-1 rounded-full">Supabase</span>
               </div>
               <div class="mt-5 flex items-center gap-4">
                 <a href="#" class="text-sm font-semibold text-accent hover:text-accentDark">Live Demo →</a>
-                <a href="#" class="text-sm font-semibold text-muted hover:text-ink">GitHub Repo</a>
+                <a href="https://github.com/Aidil241/CampusMate" class="text-sm font-semibold text-muted hover:text-ink">GitHub Repo</a>
+                <a href="https://github.com/Aidil241/CampusMate/releases/tag/v1.1.3" class="text-sm font-semibold text-muted hover:text-ink">Releases</a>
               </div>
             </div>
           </article>
 
           <!-- Kartu Proyek 2 -->
           <article class="bg-card border border-border rounded-2xl shadow-sm overflow-hidden flex flex-col hover:shadow-md transition-shadow">
-            <img src="https://placehold.co/600x360/E2E8F0/0F172A?text=EduTrack+LMS" alt="Mockup aplikasi EduTrack" class="w-full h-44 object-cover">
+            <img src="https://placehold.co/600x360/E2E8F0/0F172A?text=Kasir" alt="Mockup aplikasi EduTrack" class="w-full h-44 object-cover">
             <div class="p-6 flex flex-col flex-1">
-              <h3 class="font-bold text-ink">EduTrack — Learning Platform</h3>
+              <h3 class="font-bold text-ink">KasirKu</h3>
               <p class="mt-2 text-sm text-muted leading-relaxed flex-1">
-                Platform pembelajaran daring sederhana untuk mengelola materi kelas, tugas, dan
-                penilaian mahasiswa dalam satu dashboard.
+                Aplikasi kasir berbasis web untuk membantu proses transaksi penjualan, pengelolaan produk, stok barang, serta pencatatan riwayat transaksi secara terstruktur.
               </p>
               <div class="mt-4 flex flex-wrap gap-2">
-                <span class="text-xs font-semibold text-accent bg-accent/10 px-2.5 py-1 rounded-full">Node.js</span>
-                <span class="text-xs font-semibold text-accent bg-accent/10 px-2.5 py-1 rounded-full">PostgreSQL</span>
-                <span class="text-xs font-semibold text-accent bg-accent/10 px-2.5 py-1 rounded-full">Express</span>
+                <span class="text-xs font-semibold text-accent bg-accent/10 px-2.5 py-1 rounded-full">PHP</span>
+                <span class="text-xs font-semibold text-accent bg-accent/10 px-2.5 py-1 rounded-full">MySQL</span>
+                <span class="text-xs font-semibold text-accent bg-accent/10 px-2.5 py-1 rounded-full">Bootstrap 5</span>
               </div>
               <div class="mt-5 flex items-center gap-4">
                 <a href="#" class="text-sm font-semibold text-accent hover:text-accentDark">Live Demo →</a>
@@ -296,25 +304,22 @@
               </div>
             </div>
           </article>
-
           <!-- Kartu Proyek 3 -->
           <article class="bg-card border border-border rounded-2xl shadow-sm overflow-hidden flex flex-col hover:shadow-md transition-shadow">
-            <img src="https://placehold.co/600x360/E2E8F0/0F172A?text=WeatherNow" alt="Mockup aplikasi WeatherNow" class="w-full h-44 object-cover">
+            <img src="" alt="next" class="w-full h-44 object-cover">
             <div class="p-6 flex flex-col flex-1">
-              <h3 class="font-bold text-ink">WeatherNow — Cuaca Real-Time</h3>
+              <h3 class="font-bold text-ink">next</h3>
               <p class="mt-2 text-sm text-muted leading-relaxed flex-1">
-                Aplikasi cuaca yang mengambil data dari API publik dan menampilkan prakiraan
-                cuaca harian dengan antarmuka yang ringkas dan cepat diakses.
               </p>
-              <div class="mt-4 flex flex-wrap gap-2">
-                <span class="text-xs font-semibold text-accent bg-accent/10 px-2.5 py-1 rounded-full">JavaScript</span>
-                <span class="text-xs font-semibold text-accent bg-accent/10 px-2.5 py-1 rounded-full">API</span>
-                <span class="text-xs font-semibold text-accent bg-accent/10 px-2.5 py-1 rounded-full">CSS</span>
+              <!-- <div class="mt-4 flex flex-wrap gap-2">
+                <span class="text-xs font-semibold text-accent bg-accent/10 px-2.5 py-1 rounded-full">PHP</span>
+                <span class="text-xs font-semibold text-accent bg-accent/10 px-2.5 py-1 rounded-full">MySQL</span>
+                <span class="text-xs font-semibold text-accent bg-accent/10 px-2.5 py-1 rounded-full">Bootstrap 5</span>
               </div>
               <div class="mt-5 flex items-center gap-4">
                 <a href="#" class="text-sm font-semibold text-accent hover:text-accentDark">Live Demo →</a>
                 <a href="#" class="text-sm font-semibold text-muted hover:text-ink">GitHub Repo</a>
-              </div>
+              </div> -->
             </div>
           </article>
 
