@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://endrufitriansyah.web.id/sitemap.xml
