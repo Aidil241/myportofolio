@@ -16,22 +16,19 @@ if (menuBtn) {
     iconClose.classList.toggle('hidden');
   });
 }
-function revealElements() {
-  const reveals = document.querySelectorAll(".reveal");
-  
-  for (let i = 0; i < reveals.length; i++) {
-    const windowHeight = window.innerHeight;
-    const elementTop = reveals[i].getBoundingClientRect().top;
-    const elementVisible = 50; 
-    
-    // Jika elemen masuk ke dalam area layar, tambahkan class active
-    if (elementTop < windowHeight - elementVisible) {
-      reveals[i].classList.add("active");
-    }
-  }
-}
 
-// Jalankan saat layar di-scroll
-window.addEventListener("scroll", revealElements);
-// Jalankan langsung saat halaman pertama kali dimuat
-window.addEventListener("load", revealElements);
+// Animasi Scroll Reveal (Memperbaiki layar putih)
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    // Jika elemen masuk ke layar, tambahkan class in-view yang ada di CSS
+    if (entry.isIntersecting) {
+      entry.target.classList.add('in-view');
+    }
+  });
+}, {
+  threshold: 0.1 // Memicu animasi saat 10% bagian elemen sudah terlihat
+});
+
+// Ambil semua elemen dengan class 'reveal' dan mulai pantau
+const hiddenElements = document.querySelectorAll('.reveal');
+hiddenElements.forEach((el) => observer.observe(el));
